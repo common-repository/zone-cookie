@@ -1,0 +1,99 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.form-required {
+    border: 1px solid #ff0000 !important;
+}
+
+#zn-request-form {
+    width: 100%;
+}
+
+#zn-request-form input[type=text],
+#zn-request-form input[type=email],
+#zn-request-form select#gdpr-request {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 34px;
+    border: 1px solid #5E636D;
+}
+
+#zn-request-form textarea{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: 135px;
+    width: 100%;
+    padding: 5px;
+}
+
+#zn-request-form input[type=text]:focus,
+#zn-request-form input[type=email]:focus,
+#zn-request-form select#gdpr-request:focus,
+#zn-request-form textarea:focus,
+input[type=submit].btn-gdpr {
+    box-shadow: none;
+    outline: 0;
+}
+
+input[type=submit].btn-gdpr {
+    background: #5E636D;
+    border: 2px solid #5E636D;
+    color: #fff;
+    padding: 6px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    transition: color .3s ease, outline-color .3s ease, background-color .3s ease;
+    cursor: pointer;
+ }
+
+input[type=submit].btn-gdpr:hover {
+    background: #fff;
+    border: 2px solid #5E636D;
+    color: #5E636D;
+    transition: color .3s ease, outline-color .3s ease, background-color .3s ease;
+ }
+
+ #zn-request-form .message-success {
+    background: #88C175;
+    margin-top: 15px;
+    padding: 1rem 0.5rem;
+    color: #fff;
+}
+
+#zn-request-form .message-error {
+    background: #DD8275;
+    margin-top: 15px;
+    padding: 1rem 0.5rem;
+    color: #fff;
+}
+
+#zn-request-form .message-success p,
+#zn-request-form .message-error p  {
+    line-height: 15px;
+}
+
+.req-col-main {
+    max-width: 100%;
+    width: 100%;
+}
+
+.req-col-6 {
+    width: 49.7%;
+    display: inline-block;
+}
+
+div#zn-request-form p {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .req-col-6 {
+         width: 100%;
+         display: inline-block;
+    }
+}
